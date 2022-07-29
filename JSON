@@ -1,0 +1,115 @@
+Resume on JSON format:
+
+ "Basics": {
+    "name": Ananthavalli    
+    "label": "Full stack developer”
+    "email": "valli@gmail.com",
+    "phone": "8870500591",
+   }
+   
+    "Education": [{
+    "institution": " Anna University",
+    "Course”: “B.E ”,
+    "Dept": "ECE",
+    "Grade": "8.1",
+    }], 
+
+“Work Experience”:[{
+“company”:”Neeyamo”,
+“Role”:”Service Delivery Executive”,
+“Experience:” “3 Years”
+]}
+
+  "Projects": [{
+    "Team": "worked in multiple Indium & Wellfount projects",
+   “Role changed”:”Worked as QC analyst in Indium”
+]
+  }],
+
+  "Certificates and Awards": [{
+    "Participation certificate": "Green Olympiad",
+     “Awards”: [ “Won award at Elysium 2014"
+    ],
+
+}],
+ 
+ "Skills": [{
+    "name": "Web Development",
+    "level": "Basics",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+
+
+ "Languages": [{
+    "language": "English", “Tamil”
+  }],
+
+  "Hobby": [{
+   “liked”:”Book reading”;
+    "Games”:”Playing Tennis”
+  }],
+  
+  "Location": {
+      "address": “3/4 Pillaimar street”
+      "city": "Tenkasi”
+     “State”: “Tamilnadu”
+      "Country": "India”
+    },
+
+For In loop: 
+
+var person = {
+  fname: "Ravi",
+  lname: "Kumar",
+  age: 26
+}; 
+for (let y in person) {
+  console.log(y + ": "+ person[y])
+}
+ 
+
+For Each loop:
+
+let  mobiles = [
+  {
+      brand: 'Samsung',
+      model: 'Galaxy Note 9'
+  },
+  {
+      brand: 'Google',
+      model: 'Pixel 3'
+  },
+  {
+      brand: 'Apple',
+      model: 'iPhone X'
+  }
+];
+ 
+mobiles.forEach(mobile => {
+  for (let key in mobile) {
+      console.log(`${key}: ${mobile[key]}`);
+  }
+});
+ 
+
+
+For loop:
+ var numbers = {
+  Data:  [
+      {one: [11, 12, 13, 14, 15]},
+      {two: [21, 22, 23]}
+      
+  ]
+}; 
+for (var i=0; i< numbers.Data.length; i++) {
+  for (var key in numbers.Data[i]) {
+      for (var j= 0; j< numbers.Data[i][key].length; j++) {
+          console.log(numbers.Data[i][key][j])
+      }
+  }
+}
+
